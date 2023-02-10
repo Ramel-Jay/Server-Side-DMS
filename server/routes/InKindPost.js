@@ -10,7 +10,7 @@ router.post("/", async(req, res) => {
     await InKind.create(inkind);
 
     res.json(inkind);
-    }catch(err){
+    }catch{
         res.json("Duplicate Entry")
     }
 });

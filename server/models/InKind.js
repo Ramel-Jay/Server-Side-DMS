@@ -56,6 +56,11 @@ module.exports = (sequelize, DataType) => {
             type: DataType.STRING,
             allowNull: false,
         },
+        status:{
+            type: DataType.STRING,
+            allowNull: false,
+            defaultValue: "Pending"
+        },
     });
 
     return InKind;
