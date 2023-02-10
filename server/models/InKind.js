@@ -1,10 +1,18 @@
 module.exports = (sequelize, DataType) => {
     const InKind = sequelize.define("InKind", {
+        classification: {
+            type: DataType.STRING,
+            allowNull: false,
+        },
         firstName: {
             type: DataType.STRING,
             allowNull: false,
         },
         lastName: {
+            type: DataType.STRING,
+            allowNull: false,
+        },
+        gender: {
             type: DataType.STRING,
             allowNull: false,
         },
