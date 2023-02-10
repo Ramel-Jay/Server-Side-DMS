@@ -18,10 +18,12 @@ module.exports = (sequelize, DataType) => {
         },
         email: {
             type: DataType.STRING,
+            unique: true,
             allowNull: false,
         },
         number: {
             type: DataType.BIGINT,
+            unique: true,
             allowNull: false,
         },
         address: {
@@ -46,6 +48,7 @@ module.exports = (sequelize, DataType) => {
         },
         rNum: {
             type: DataType.BIGINT,
+            unique: true,
             allowNull: false,
         },
         request: {
@@ -55,12 +58,7 @@ module.exports = (sequelize, DataType) => {
         username: {
             type: DataType.STRING,
             allowNull: false,
-        },
-        status:{
-            type: DataType.STRING,
-            allowNull: false,
-            defaultValue: "Pending"
-        },
+        },  
     });
 
     return InKind;
